@@ -23,8 +23,13 @@ li a:hover {
   
 }
 
+.container {
+position: relative;
+}
+
 .sidebar {
 display: flex;
+position: absolute;
 }
 
 .candidates {
@@ -40,39 +45,39 @@ color: red ;
 font-weight: 700;
 }
 
-.border {
-position: relative;
-float:left;
-width: 50%;
-}
 .border-1 {
 height: 600px;
-width:100%;
+width:50%;
 background-image: url(https://www.firestock.ru/wp-content/uploads/2015/08/Dollarphotoclub_72821478-700x465.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: 50% 50%;
 position: absolute;
 z-index: 1;
+top: 130px;
+left: 0px;
 }
 .border-1-1 {
 height: 600px;
-width:100%;
+width:50%;
 background-color: red;
 position: absolute;
 z-index: 2;
 opacity: 0.5;
+top: 130px;
+
 }
 .border-2 {
 width: 50%;
-float:right;
 text-align:  center;
 background-color: #B8DBF1;
 height: 600px;
+position: absolute;
+top: 130px;
+left: 630px;
 }
 .about-us {
-width: 100%
-}
-.footer {
-width: 100%
+width: 100%;
+position: absolute;
+top: 729px;
 }
