@@ -122,3 +122,115 @@ display: block;
 margin:0 auto;
 margin-top: 85px;
 }
+
+.manage {
+height: 75px;
+width: 100%;
+position: absolute;
+top: 1659px;
+}
+
+.text-1 {
+text-align: center;
+color: #D1D1D1 ;
+}
+
+.text-2 {
+margin-top: 10px;
+text-align: center;
+color: #424649 ;
+font-weight: bolder;
+font-size: 30px;
+}
+
+.little-container {
+position: relative;
+width: 100%;
+height: 450px;
+top: 1770px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.manage-colum {
+height:400px;
+width:30%;
+background-color: #F1F0EE;
+}
+
+.manage-colum p {
+text-align: center;
+font-weight: bolder;
+font-size: 25px;
+margin-top: 40px;
+}
+
+.manage-colum i {
+color: red;
+font-size: 50px ;
+display: block ;
+text-align: center;
+margin-top: 80px
+}
+
+.blocks {
+height: 75px;
+position: relative;
+top:1780px;
+text-align: center;
+color: white;
+}
+
+.block-1 {
+position: absolute;
+width: 50%;
+top:0;
+left: 0;
+background-color: #E4191C;
+line-height: 75px;
+}
+
+.block-2 {
+position: absolute;
+width: 50%;
+top:0;
+right: 0;
+background-color: #77CED7;
+line-height: 75px;
+}
+
+.client {
+position: relative;
+top: 1820px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+height: 50px;
+line-height: 50px;;
+}
+
+.client b {
+font-size: 30px;
+}
+
+.client i {
+font-size: 20px;
+}
+
+.client a {
+font-weight: bolder;
+font-size: 20px;
+margin-top: 0px;
+color: red;
+margin-bottom: 0px;
+border: 2px solid #D0F1E8;
+padding: 8px;
+padding-top: 0px;
+text-decoration: none;
+}
+
+.client a:hover {
+background-color: #FFFBAA;
+text-decoration: underline;
+}
