@@ -10,6 +10,26 @@ ul {
 list-style-type: none;
 }
 
+.container {
+width: 100%;
+}
+
+.header {
+display: flex;
+height: 140px;
+justify-content: space-between;
+}
+
+.sitename {
+margin-left: 20px;
+margin-top: 20px;
+}
+
+.sidebar {
+margin-right: 30px;
+margin-top: 10px;
+}
+
 .sidebar ul {
 margin: 0;
 padding: 0;
@@ -31,21 +51,10 @@ color: #111111;
 }
 
 .sidebar li a:hover {
-  background-color: #FFFBAA;
-  text-decoration: underline;
+background-color: #FFFBAA;
+text-decoration: underline;
 }
 
-.container {
-width: 100%;
-}
-
-.sidebar {
-display: flex;
-}
-
-.candidates {
-margin-left: 80px ;
-}
 
 .job {
 margin-top: 40px ;
@@ -57,6 +66,7 @@ font-weight: 700;
 }
 
 .border {
+position: relative;
 display:flex;
 text-align: center;
 color:#F1F0EE;
@@ -184,7 +194,7 @@ background-image: url(D:/Projects/app2/images/office.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: 50% 50%;
-position: absolute;
+position: relative;
 left: 7.5%;
 top: -125px;
 }
@@ -225,6 +235,7 @@ padding: 10px;
 margin-left: 50px;
 display: inline-block;
 margin-top: 15px; 
+text-decoration: none;
 }
 
 .photo-2 a:hover {
