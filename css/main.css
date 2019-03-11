@@ -2,31 +2,37 @@
     padding: 0;
     margin: 0;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+list-style-type: none;
 }
 
-li {
-  float: left;
+.sidebar ul {
+margin: 0;
+padding: 0;
+overflow: hidden;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  margin-top: 45px;
-  text-decoration: none;
-  color: #111111;
+.sidebar li {
+float: left;
 }
-li a:hover {
+
+.sidebar li a {
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+margin-top: 45px;
+text-decoration: none;
+color: #111111;
+}
+
+.sidebar li a:hover {
   background-color: #FFFBAA;
   text-decoration: underline;
-  
 }
 
 .container {
@@ -68,6 +74,7 @@ color:#F1F0EE;
 .border a:hover {
 background-color: #F1F0EE;
 text-decoration: underline;
+color:black;
 }
 
 .border i {
@@ -101,22 +108,17 @@ z-index: 1;
 .border-1-1 {
 height: 600px;
 width:50%;
-background-color: red;
 position: absolute;
 z-index: 2;
-opacity: 0.3;
-top: 130px;
-left: 0px;
+background-color: rgba(255,0,0, .3);
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .border-1-text {
 width:50%;
-position: absolute;
-top: 130px;
-left: 0px;
-z-index: 3;
 color:white;
-padding-top: 175px;
 }
 
 .border-2 {
@@ -171,7 +173,7 @@ text-decoration: underline;
 
 .photo {
 width: 100% ;
-height:450px;
+height:400px;
 position: relative;
 }
 
@@ -182,7 +184,6 @@ background-image: url(D:/Projects/app2/images/office.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: 50% 50%;
-display: block;
 position: absolute;
 left: 7.5%;
 top: -125px;
@@ -190,28 +191,61 @@ top: -125px;
 
 .photo-2 {
 width: 50%;
-background-color: red;
-opacity: 0.7 ;
 height:300px;
-display: block;
-margin:0 auto;
-margin-top: 85px;
+background-color: rgba(255,0,0, .5);
 position: absolute;
 left:25%;
+margin-top: 75px;
+}
+
+.photo-2 span {
+color: white;
+display: block;
+font-weight: bold;
+margin-left: 50px;
+margin-bottom: 20px;
+}
+
+.number {
+font-size: 20px;
+margin-top:30px;
+}
+
+.know {
+font-weight: bolder;
+font-size: 60px;
+}
+
+.photo-2 a {
+border:3px solid #F1F0EE;
+font-size: 20px;
+font-weight: bolder;
+color:#F1F0EE;
+padding: 10px;
+margin-left: 50px;
+display: inline-block;
+margin-top: 15px; 
+}
+
+.photo-2 a:hover {
+background-color: #F1F0EE;
+text-decoration: underline;
+color:black;
 }
 
 .manage {
 height: 75px;
 width: 100%;
 position: relative;
+margin-bottom: 50px;
 }
 
-.text-1 {
+.services {
 text-align: center;
 color: #D1D1D1 ;
 }
 
-.text-2 {
+.workforce {
 margin-top: 10px;
 text-align: center;
 color: #424649 ;
@@ -219,11 +253,10 @@ font-weight: bolder;
 font-size: 30px;
 }
 
-.little-container {
+.staffing {
 position: relative;
 width: 100%;
 height: 450px;
-top: 1770px;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -233,11 +266,11 @@ justify-content: space-around;
 height:400px;
 width:30%;
 background-color: #F1F0EE;
+text-align: center;
+font-weight: bolder;
 }
 
 .manage-colum p {
-text-align: center;
-font-weight: bolder;
 font-size: 25px;
 margin-top: 40px;
 }
@@ -250,40 +283,49 @@ text-align: center;
 margin-top: 80px
 }
 
+.manage-colum a {
+font-size: 25px;
+display: inline-block;
+margin-top: 20px ;
+border:3px solid black;
+padding: 8px;
+color:black;
+text-decoration: none;
+}
+
+.manage-colum a:hover {
+background-color: #F1F0EE;
+text-decoration: underline;
+color:black;
+}
+
 .blocks {
 height: 75px;
 position: relative;
-top:1780px;
 text-align: center;
 color: white;
+display: flex;
+line-height: 75px;
 }
 
-.block-1 {
-position: absolute;
+.look {
 width: 50%;
-top:0;
-left: 0;
 background-color: #E4191C;
-line-height: 75px;
 }
 
-.block-2 {
-position: absolute;
+.better {
 width: 50%;
-top:0;
-right: 0;
 background-color: #77CED7;
-line-height: 75px;
 }
 
 .client {
 position: relative;
-top: 1820px;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 height: 50px;
-line-height: 50px;;
+line-height: 50px;
+margin-top: 50px;
 }
 
 .client b {
@@ -297,10 +339,8 @@ font-size: 20px;
 .client a {
 font-weight: bolder;
 font-size: 20px;
-margin-top: 0px;
 color: red;
-margin-bottom: 0px;
-border: 2px solid #D0F1E8;
+border: 3px solid #D0F1E8;
 padding: 8px;
 padding-top: 0px;
 text-decoration: none;
@@ -310,3 +350,73 @@ text-decoration: none;
 background-color: #FFFBAA;
 text-decoration: underline;
 }
+
+.footer {
+position: relative;
+width: 80% ;
+background-color:#EDEDED;
+height: 230px;
+margin: 50px 0px 0px 50px;
+left:6%;
+display: flex;
+margin-bottom: 50px;
+}
+
+.candidat h4 {
+margin: 30px 0px 10px 0px;
+}
+
+.candidat li  {
+padding:5px;
+padding-left: 0px;
+}
+
+.employers {
+width: 60% ;
+display: flex;
+justify-content: space-around;
+margin-left: 20px;
+}
+
+.letter {
+font-size: 18px;
+text-align: center;
+}
+
+.newsletter {
+font-weight: bolder;
+margin-top: 25px;
+}
+
+.newsletter input {
+display: block;
+margin: 10px 0px 10px 10px;
+border: 3px solid #686868;
+padding: 5px;
+box-shadow: 0 0 0 1px #AAAAAA;
+}
+
+.followus {
+margin-top: 20px;
+}
+
+.follow {
+font-weight: bolder;
+margin-right: 10px;
+}
+
+.keep {
+font-style: italic;
+}
+
+.icons {
+display: flex;
+justify-content: space-around;
+font-size: 30px;
+margin-top: 20px;
+}
+
+.icons i {
+cursor:pointer;
+}
+
